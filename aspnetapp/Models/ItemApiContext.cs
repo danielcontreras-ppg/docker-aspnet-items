@@ -18,8 +18,7 @@ namespace ItemApi.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseNpgsql("User ID=postgres;Password=postgres;Server=lfa-sbx-db-etl-item.cluster-ctfjjcxstzpb.eu-central-1.rds.amazonaws.com
-;Port=5432;Database=postgres;Integrated Security=true; Pooling=true;");
+                optionsBuilder.UseNpgsql("User ID=postgres;Password=postgres;Server=lfa-sbx-db-etl-item.cluster-ctfjjcxstzpb.eu-central-1.rds.amazonaws.com;Port=5432;Database=postgres;Integrated Security=true; Pooling=true;");
             }
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
