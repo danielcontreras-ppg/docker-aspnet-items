@@ -28,7 +28,8 @@ public class Startup
         app.UseCors(builder =>
         {
             builder
-            .WithOrigins("http://localhost:8080/")
+            .AllowAnyOrigin()
+            //.WithOrigins("http://localhost:8080/")
             .AllowAnyMethod()
             .AllowAnyHeader()
             .SetIsOriginAllowed(origin => true);
